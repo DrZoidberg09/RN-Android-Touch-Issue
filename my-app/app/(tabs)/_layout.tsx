@@ -1,7 +1,6 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link, Tabs, Redirect } from 'expo-router';
 import { Pressable, ViewStyle} from 'react-native';
-import AddButton from '@/components/addbutton';
 import {Colors, Typography, Text} from 'react-native-ui-lib'
 import { useRef } from 'react';
 /**
@@ -44,16 +43,6 @@ export default function TabLayout() {
             focused ? (<Text style={{ fontSize: 10, fontWeight: 'bold', color: color }}>{children}</Text>) :
                 (<Text style={{ fontSize: 10, fontWeight: 'normal', color: "grey" }}>{children}</Text>),
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'explore',
-          tabBarLabel: ({ color, focused, children }) =>
-            focused ? (<Text style={{ fontSize: 10, fontWeight: 'bold', color: color }}>{children}</Text>) :
-                (<Text style={{ fontSize: 10, fontWeight: 'normal', color: "grey" }}>{children}</Text>),
-          tabBarIcon: ({ color }) => <AddButton />
         }}
       />
     </Tabs>

@@ -40,7 +40,6 @@ useLayoutEffect(() => {
       <Pressable onPress={() => {router.navigate({pathname: "/Screens/screen"})}}>
       <Text style={{color: Colors.$textDefault}} text60>Go to Screen</Text>
       </Pressable>
-      <View style={{position: 'absolute', right: 50, bottom: 50}}><Text>For issue #12345</Text></View>
       </View>
 
     <ActionSheet
